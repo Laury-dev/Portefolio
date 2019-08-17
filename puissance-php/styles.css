@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+body {
+    background: #000;
+    color: #fff;
+    /* position: relative; */
+    display: grid;
+    justify-items: center;
+}
+
+
+/* --- Base du titre --- */
+
+.title {
+    position: relative;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.1px #f1f1f1;
+    font-family: 'Righteous', cursive;
+    font-size: 3em;
+    margin: 0.5em 0 0.5em 0;
+}
+
+
+/* --- BRemplissage du titre --- */
+
+.title-body {
+    -webkit-background-clip: text;
+    background-image: -webkit-linear-gradient(#C3BFB4 0%, #FDFCFA 50%, #E8E7E5 51%, #757172 52%, #E8E9DB 100%);
+    -webkit-filter: drop-shadow(2px 2px 15px #3F59F4);
+}
+
+
+/* --- Rectangle rouge --- */
+
+.title-red {
+    color: #F10C20;
+    -webkit-text-fill-color: #F10C20;
+    -webkit-text-stroke: 0;
+    -webkit-filter: drop-shadow(2px 2px 15px #F10C20);
+    font-style: italic;
+}
+
+
+/* --- Rectangle vert --- */
+
+.title-green {
+    color: rgb(101, 252, 36);
+    -webkit-text-fill-color: rgb(101, 252, 36);
+    -webkit-filter: drop-shadow(2px 2px 15px rgb(101, 252, 36));
+    -webkit-text-stroke: 0;
+    font-style: italic;
+}
+
+
+/* --- Rectangle bleu --- */
+
+.title-blue {
+    color: rgb(45, 72, 224);
+    -webkit-text-fill-color: rgb(45, 72, 224);
+    -webkit-filter: drop-shadow(2px 2px 15px rgb(45, 72, 224));
+    -webkit-text-stroke: 0;
+    font-style: italic;
+}
+
+
+/* --- BRectangle jaune --- */
+
+.title-yellow {
+    color: rgb(226, 230, 32);
+    -webkit-text-fill-color: rgb(226, 230, 32);
+    -webkit-filter: drop-shadow(2px 2px 15px rgb(226, 230, 32));
+    -webkit-text-stroke: 0;
+    font-style: italic;
+}
+
+
+/* --- Tableau de jeu --- */
+
+table {
+    background-color: blue;
+}
+
+div {
+    width: 6em;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* --- Couleur des boutons du tableau --- */
+
+.apparence {
+    appearance: none;
+    border: none;
+    color: transparent;
+    background: blue;
+}
+
+
+/* --- Case vide --- */
+
+.cercle {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 1em;
+}
+
+
+/* --- Jeton jaune --- */
+
+.cercleYellow {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: yellow;
+    margin: 1em;
+}
+
+
+/* --- Jeton rouge --- */
+
+.cercleRed {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: red;
+    margin: 1em;
+}
+
+
+/* --- Bouton reset --- */
+
+#reset {
+    font-family: 'Righteous', cursive;
+    margin-top: 0.5em;
+    padding: 1em;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 35%;
+    background-image: -webkit-linear-gradient(#C3BFB4 0%, #FDFCFA 50%, #E8E7E5 51%, #757172 52%, #E8E9DB 100%);
+    color: black;
+    font-size: 1em;
+}
+
+.winner {
+    width: 52%;
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    color: #E8E9DB;
+}
